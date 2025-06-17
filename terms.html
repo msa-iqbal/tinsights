@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Stack Surge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .terms-section {
+            padding: calc(var(--header-height) + 3rem) 0 5rem;
+        }
+        
+        .terms-container {
+            background-color: var(--card);
+            border-radius: var(--radius);
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+        
+        .terms-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .terms-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .terms-header p {
+            opacity: 0.7;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .terms-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .terms-section-title {
+            font-size: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--primary);
+        }
+        
+        .terms-section-title:first-child {
+            margin-top: 0;
+        }
+        
+        .terms-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .terms-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .terms-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .terms-footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .terms-footer p {
+            opacity: 0.7;
+        }
+        
+        .terms-contact {
+            margin-top: 1rem;
+        }
+        
+        .terms-contact a {
+            color: var(--primary);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .terms-contact a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .terms-container {
+                padding: 2rem;
+            }
+            
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <canvas id="network-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="images/logo.png" alt="Stack Surge Logo">
+                </div>
+                <h1>Stack Surge</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#events">Events</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="connect.html">Connect</a></li>
+                    <li><a href="share.html">Share</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button class="share-btn" aria-label="Share">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="primary-btn join-btn">Join Community</button>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="terms-section">
+            <div class="container">
+                <div class="terms-container">
+                    <div class="terms-header">
+                        <h1>Terms & <span class="gradient-text">Conditions</span></h1>
+                        <p>Last updated: May 20, 2023</p>
+                    </div>
+                    
+                    <div class="terms-content">
+                        <h2 class="terms-section-title">1. Introduction</h2>
+                        <p>Welcome to Stack Surge ("we," "our," or "us"). By accessing or using our website, services, applications, and content (collectively, the "Services"), you agree to be bound by these Terms and Conditions ("Terms"). Please read these Terms carefully before using our Services.</p>
+                        
+                        <h2 class="terms-section-title">2. Acceptance of Terms</h2>
+                        <p>By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use our Services.</p>
+                        
+                        <h2 class="terms-section-title">3. Changes to Terms</h2>
+                        <p>We reserve the right to modify these Terms at any time. We will provide notice of any material changes by posting the updated Terms on our website or through other communications. Your continued use of the Services after such changes constitutes your acceptance of the new Terms.</p>
+                        
+                        <h2 class="terms-section-title">4. User Accounts</h2>
+                        <p>To access certain features of our Services, you may need to create an account. You are responsible for:</p>
+                        <ul>
+                            <li>Providing accurate and complete information when creating your account</li>
+                            <li>Maintaining the security of your account credentials</li>
+                            <li>All activities that occur under your account</li>
+                            <li>Notifying us immediately of any unauthorized use of your account</li>
+                        </ul>
+                        
+                        <h2 class="terms-section-title">5. User Content</h2>
+                        <p>Our Services may allow you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material ("User Content"). You are solely responsible for the User Content that you post, including its legality, reliability, and appropriateness.</p>
+                        <p>By posting User Content, you grant us the right to use, modify, publicly perform, publicly display, reproduce, and distribute such content on and through our Services. You retain any and all of your rights to any User Content you submit, post, or display on or through our Services.</p>
+                        
+                        <h2 class="terms-section-title">6. Prohibited Activities</h2>
+                        <p>You agree not to engage in any of the following prohibited activities:</p>
+                        <ul>
+                            <li>Using the Services for any illegal purpose or in violation of any local, state, national, or international law</li>
+                            <li>Harassing, threatening, or intimidating other users</li>
+                            <li>Posting or transmitting any content that is abusive, offensive, or harmful</li>
+                            <li>Attempting to interfere with, compromise the system integrity or security, or decipher any transmissions to or from the servers running the Services</li>
+                            <li>Taking any action that imposes an unreasonable or disproportionately large load on our infrastructure</li>
+                            <li>Collecting or harvesting any personally identifiable information from the Services</li>
+                        </ul>
+                        
+                        <h2 class="terms-section-title">7. Intellectual Property</h2>
+                        <p>The Services and their original content (excluding User Content), features, and functionality are and will remain the exclusive property of Stack Surge and its licensors. The Services are protected by copyright, trademark, and other laws of both the United States and foreign countries.</p>
+                        
+                        <h2 class="terms-section-title">8. Links to Other Websites</h2>
+                        <p>Our Services may contain links to third-party websites or services that are not owned or controlled by Stack Surge. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that we shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
+                        
+                        <h2 class="terms-section-title">9. Termination</h2>
+                        <p>We may terminate or suspend your account and bar access to the Services immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.</p>
+                        
+                        <h2 class="terms-section-title">10. Limitation of Liability</h2>
+                        <p>In no event shall Stack Surge, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Services.</p>
+                        
+                        <h2 class="terms-section-title">11. Governing Law</h2>
+                        <p>These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+                        
+                        <h2 class="terms-section-title">12. Contact Us</h2>
+                        <p>If you have any questions about these Terms, please contact us at:</p>
+                    </div>
+                    
+                    <div class="terms-footer">
+                        <p>© 2023 Stack Surge. All rights reserved.</p>
+                        <div class="terms-contact">
+                            <a href="mailto:sayhi.us@outlook.com">sayhi.us@outlook.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-img small">
+                        <img src="images/logo.png" alt="Stack Surge Logo">
+                    </div>
+                    <h3>Stack Surge</h3>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Join Stack Surge</a></li>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="#">Diversity & Inclusion</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Podcast</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Discord</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <p>Have questions or feedback?</p>
+                        <a href="mailto:sayhi.us@outlook.com" class="footer-email">sayhi.us@outlook.com</a>
+                        <div class="footer-legal">
+                            <a href="terms.html">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Stack Surge. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="network-bg.js"></script>
+</body>
+</html>
