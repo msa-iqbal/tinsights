@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T Insights | Where Developers Connect</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>T-Insights | Where Developers Connect</title>
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body class="dark-theme">
     <canvas id="network-canvas"></canvas>
     <div class="noise-overlay"></div>
-
     <header>
       <div class="container">
         <div class="logo">
-          <a href="index.html" aria-label="Home" title="Home"
+          <a href="./index.html" aria-label="Home" title="Home"
             ><img
-              src="./public/images/white-logo.svg"
+              src="./assets/images/white-logo.svg"
               alt="Muhammad S.A. Iqbal"
               width="150"
               height="auto"
@@ -38,7 +47,6 @@
             <li><a href="#events">Events</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
-            <li><a href="update.html">Updates</a></li>
           </ul>
         </nav>
         <div class="nav-right">
@@ -49,7 +57,9 @@
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
           </button>
-          <button class="primary-btn join-btn">Join fghytyjy Community</button>
+          <a href="./pages/connect.html" target="_self"
+            ><button class="primary-btn join-btn">Join Community</button></a
+          >
           <button class="menu-toggle" aria-label="Toggle menu">
             <span></span>
             <span></span>
@@ -66,10 +76,14 @@
               Connect. <span class="gradient-text">Create.</span> Grow.
             </h1>
             <p class="hero-subtitle">
-              Join a thriving community of developers building the future
-              together
+              Join T-Insights — a vibrant, open-minded community where
+              developers and tech enthusiasts connect, share insights, and grow
+              together.
             </p>
-            <div class="hero-stats">
+
+            <!--  Fix: Show hero starts if needed
+            
+           <div class="hero-stats">
               <div class="stat">
                 <span class="stat-number">5.2K+</span>
                 <span class="stat-label">Members</span>
@@ -83,10 +97,9 @@
                 <span class="stat-label">Events</span>
               </div>
             </div>
-            <div class="hero-cta">
-              <button class="primary-btn">Get Started</button>
-              <button class="secondary-btn">Explore Projects</button>
-            </div>
+
+            Fix (End)-->
+
             <div class="scroll-indicator">
               <span>Scroll to explore</span>
               <i class="fas fa-chevron-down"></i>
@@ -106,7 +119,7 @@
                 </div>
               </div>
               <div class="editor-body">
-                <pre><code class="language-javascript">class StackSurge {
+                <pre><code class="language-javascript">class Tinsights {
   constructor() {
     this.members = [];
     this.projects = [];
@@ -119,7 +132,7 @@
     
     return {
       status: "success",
-      message: "You're now part of Stack Surge!"
+      message: "You're now part of T-Insights"
     };
   }
 
@@ -163,7 +176,7 @@
       <section id="features" class="features">
         <div class="container">
           <div class="section-header">
-            <h2>Why Join <span class="gradient-text">Stack Surge</span>?</h2>
+            <h2>Why Join <span class="gradient-text">With Us</span>?</h2>
             <p>
               Discover the benefits of being part of our thriving developer
               community
@@ -466,18 +479,28 @@
                 <div class="social-content">
                   <h4>GitHub</h4>
                   <p>Explore our open-source projects</p>
-                  <a href="#" class="social-link">@stacksurge</a>
+                  <a
+                    href="https://github.com/thetinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@thetinsights</a
+                  >
                 </div>
               </div>
 
-              <div class="social-card" data-platform="twitter">
+              <div class="social-card" data-platform="reddit">
                 <div class="social-icon">
-                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-reddit"></i>
                 </div>
                 <div class="social-content">
-                  <h4>Twitter</h4>
-                  <p>Follow us for the latest updates</p>
-                  <a href="#" class="social-link">@stacksurge</a>
+                  <h4>Reddit</h4>
+                  <p>Join our private group</p>
+                  <a
+                    href="https://www.reddit.com/r/tinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@tinsights</a
+                  >
                 </div>
               </div>
 
@@ -488,7 +511,12 @@
                 <div class="social-content">
                   <h4>Discord</h4>
                   <p>Join our community chat</p>
-                  <a href="#" class="social-link">Stack Surge Server</a>
+                  <a
+                    href="https://discord.gg/XtzMwG9rXB"
+                    target="_blank"
+                    class="social-link"
+                    >T-Insights Server</a
+                  >
                 </div>
               </div>
 
@@ -499,7 +527,12 @@
                 <div class="social-content">
                   <h4>LinkedIn</h4>
                   <p>Connect professionally</p>
-                  <a href="#" class="social-link">Stack Surge</a>
+                  <a
+                    href="https://www.linkedin.com/groups/14716474"
+                    target="_blank"
+                    class="social-link"
+                    >T-Insights Group</a
+                  >
                 </div>
               </div>
 
@@ -510,7 +543,12 @@
                 <div class="social-content">
                   <h4>YouTube</h4>
                   <p>Watch our tutorials and talks</p>
-                  <a href="#" class="social-link">Stack Surge Channel</a>
+                  <a
+                    href="https://www.youtube.com/@TheTinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@TheTinsights</a
+                  >
                 </div>
               </div>
 
@@ -520,8 +558,13 @@
                 </div>
                 <div class="social-content">
                   <h4>Facebook</h4>
-                  <p>Join our community page</p>
-                  <a href="#" class="social-link">Stack Surge</a>
+                  <p>Join our community group</p>
+                  <a
+                    href="https://www.facebook.com/groups/tinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@tinsights</a
+                  >
                 </div>
               </div>
             </div>
@@ -543,7 +586,7 @@
               <div class="form-privacy">
                 <label>
                   <input type="checkbox" required />
-                  <span>I agree to receive emails from Stack Surge</span>
+                  <span>I agree to receive emails from T-Insights</span>
                 </label>
               </div>
             </form>
@@ -559,7 +602,9 @@
               Connect with fellow developers, contribute to exciting projects,
               and grow your skills.
             </p>
-            <button class="primary-btn">Join Stack Surge Today</button>
+            <a href="./pages/connect.html" target="_self"
+              ><button class="primary-btn">Join T-Insights Today</button></a
+            >
           </div>
           <div class="join-image">
             <div class="tech-stack">
@@ -608,62 +653,117 @@
     <footer>
       <div class="container">
         <div class="footer-content">
+          <div id="about" class="footer-about">
+            <p>
+              <strong>T‑Insights</strong> is a forward-thinking community built
+              for developers, tech enthusiasts, and digital innovators who are
+              passionate about shaping the future. We believe in the power of
+              collaboration, knowledge sharing, and open dialogue to drive
+              progress in the tech world.
+            </p>
+            <p>
+              Founded with the vision of creating a space where ideas spark and
+              insights grow, T‑Insights empowers its members to explore new
+              technologies, exchange experiences, and contribute to meaningful
+              conversations around software development, emerging trends, and
+              real-world challenges.
+            </p>
+            <p>
+              Whether you're a seasoned developer or just starting your journey,
+              T‑Insights offers a supportive, inclusive environment where
+              everyone is encouraged to
+              <strong>learn, build, and inspire</strong>. We host insightful
+              discussions, collaborative projects, tech events, and idea-sharing
+              sessions designed to help you grow — both personally and
+              professionally.
+            </p>
+
+            <p><strong> What We Stand For</strong></p>
+            <ul class="footer-values">
+              <li>
+                <strong>Innovation First</strong> – We embrace change and
+                celebrate the creators who push boundaries.
+              </li>
+              <li>
+                <strong>Community Driven</strong> – Every voice matters; we
+                thrive through collaboration.
+              </li>
+              <li>
+                <strong>Continuous Learning</strong> – Growth comes from
+                curiosity, experimentation, and shared knowledge.
+              </li>
+              <li>
+                <strong>Open-Minded Culture</strong> – Diverse perspectives fuel
+                creativity and progress.
+              </li>
+            </ul>
+
+            <p><strong>Join the Movement</strong></p>
+            
+            <p>
+              Be part of a vibrant, ever-evolving network of developers and tech
+              thinkers. At <strong>T‑Insights</strong>, you’re not just a member
+              — you’re a contributor to the future of technology.
+            </p>
+          </div>
           <div class="footer-logo">
             <div class="logo-img small">
-              <img src="images/logo.png" alt="Stack Surge Logo" />
+              <img src="./assets/images/logo.svg" alt="T-Insights Logo" />
             </div>
-            <h3>Stack Surge</h3>
+            <h3>T-Insights</h3>
           </div>
           <div class="footer-links">
             <div class="footer-column">
               <h4>Community</h4>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Join Stack Surge</a></li>
-                <li><a href="#">Code of Conduct</a></li>
-                <li><a href="#">Diversity & Inclusion</a></li>
+                <li>
+                  <a href="./pages/terms.html" target="_blank"
+                    >Terms & Conditions</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer-column">
               <h4>Resources</h4>
               <ul>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Podcast</a></li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@TheTinsights"
+                    target="_blank"
+                    >Tutorials</a
+                  >
+                </li>
+                <li>
+                  <a href="https://dly.to/LVKj9ZA39rw" target="_blank">Blog</a>
+                </li>
               </ul>
             </div>
             <div class="footer-column">
               <h4>Connect</h4>
               <ul>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li>
+                  <a href="https://discord.gg/XtzMwG9rXB" target="_blank"
+                    >Discord</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/thetinsights" target="_blank"
+                    >GitHub</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer-column">
-              <h4>Contact Us</h4>
+              <h4>Send Email</h4>
               <p>Have questions or feedback?</p>
               <a href="mailto:sayhi.us@outlook.com" class="footer-email"
                 >sayhi.us@outlook.com</a
               >
-              <div class="footer-legal">
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-              </div>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2023 Stack Surge. All rights reserved.</p>
-          <div class="footer-social">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
+          <p>&copy; 2025 T-Insights. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -678,7 +778,7 @@
         <button class="share-modal-close">
           <i class="fas fa-times"></i>
         </button>
-        <h3 class="share-modal-title">Share Stack Surge</h3>
+        <h3 class="share-modal-title">Share T-Insights</h3>
         <div class="share-options">
           <div class="share-option" data-platform="twitter">
             <i class="fab fa-twitter" style="color: #1da1f2"></i>
@@ -709,143 +809,8 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="network-bg.js"></script>
-    <script>
-      // Share functionality
-      const shareBtn = document.querySelector(".share-btn");
-      const shareModal = document.querySelector(".share-modal");
-      const shareModalClose = document.querySelector(".share-modal-close");
-      const shareOptions = document.querySelectorAll(".share-option");
-      const shareLinkCopy = document.querySelector(".share-link-copy");
-      const shareLinkInput = document.querySelector(".share-link-input");
-
-      // Open share modal
-      if (shareBtn) {
-        shareBtn.addEventListener("click", () => {
-          shareModal.classList.add("active");
-        });
-      }
-
-      // Close share modal
-      if (shareModalClose) {
-        shareModalClose.addEventListener("click", () => {
-          shareModal.classList.remove("active");
-        });
-      }
-
-      // Close modal when clicking outside
-      if (shareModal) {
-        shareModal.addEventListener("click", (e) => {
-          if (e.target === shareModal) {
-            shareModal.classList.remove("active");
-          }
-        });
-      }
-
-      // Share options
-      if (shareOptions) {
-        shareOptions.forEach((option) => {
-          option.addEventListener("click", () => {
-            const platform = option.getAttribute("data-platform");
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent(
-              "Check out Stack Surge - A community for developers!"
-            );
-
-            let shareUrl = "";
-
-            switch (platform) {
-              case "twitter":
-                shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-                break;
-              case "facebook":
-                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-                break;
-              case "linkedin":
-                shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-                break;
-              case "whatsapp":
-                shareUrl = `https://wa.me/?text=${text}%20${url}`;
-                break;
-            }
-
-            if (shareUrl) {
-              window.open(shareUrl, "_blank");
-            }
-          });
-        });
-      }
-
-      // Copy link
-      if (shareLinkCopy && shareLinkInput) {
-        shareLinkCopy.addEventListener("click", () => {
-          shareLinkInput.select();
-          document.execCommand("copy");
-
-          shareLinkCopy.textContent = "Copied!";
-          setTimeout(() => {
-            shareLinkCopy.textContent = "Copy";
-          }, 2000);
-        });
-      }
-
-      // Active menu item
-      const navLinks = document.querySelectorAll(".nav-links a");
-
-      // Set active class based on scroll position
-      window.addEventListener("scroll", () => {
-        let current = "";
-
-        const sections = document.querySelectorAll("section");
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-
-          if (window.pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute("id");
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
-    <style>
-      .footer-email {
-        display: inline-block;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--primary);
-        margin-bottom: 1rem;
-        transition: all 0.3s ease;
-      }
-
-      .footer-email:hover {
-        color: var(--secondary);
-        text-decoration: underline;
-      }
-
-      .footer-legal {
-        display: flex;
-        gap: 1.5rem;
-        font-size: 0.875rem;
-      }
-
-      .footer-legal a {
-        color: var(--foreground);
-        opacity: 0.7;
-        transition: all 0.2s ease;
-      }
-
-      .footer-legal a:hover {
-        opacity: 1;
-        color: var(--primary);
-      }
-    </style>
+    <!-- JavaScript Link -->
+    <script src="./js/main.js"></script>
+    <script src="./js/utils/network-bg.js"></script>
   </body>
 </html>

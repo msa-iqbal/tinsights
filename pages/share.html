@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share | Stack Surge</title>
+
+    <!-- ----- CSS Link ----- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/share-styles.css" />
+  </head>
+  <body class="dark-theme">
+    <canvas id="network-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="images/logo.png" alt="Stack Surge Logo" />
+          </div>
+          <h1>Stack Surge</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="connect.html">Connect</a></li>
+            <li><a href="share.html" class="active">Share</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right">
+          <button class="share-btn" aria-label="Share">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button class="theme-toggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="primary-btn join-btn">Join Community</button>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="share-page-section">
+        <div class="share-page-container">
+          <div class="share-page-content">
+            <h1>Share <span class="gradient-text">Stack Surge</span></h1>
+            <p>Help us grow by sharing our community with your network</p>
+
+            <div class="share-grid">
+              <!-- Social Media Platforms -->
+              <a href="#" class="share-item" data-platform="twitter">
+                <div class="share-icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <span>Twitter</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="facebook">
+                <div class="share-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <span>Facebook</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="linkedin">
+                <div class="share-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="whatsapp">
+                <div class="share-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <span>WhatsApp</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="telegram">
+                <div class="share-icon">
+                  <i class="fab fa-telegram-plane"></i>
+                </div>
+                <span>Telegram</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="reddit">
+                <div class="share-icon">
+                  <i class="fab fa-reddit-alien"></i>
+                </div>
+                <span>Reddit</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="email">
+                <div class="share-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <span>Email</span>
+              </a>
+
+              <!-- Developer Platforms -->
+              <a href="#" class="share-item" data-platform="github">
+                <div class="share-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <span>GitHub</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="stackoverflow">
+                <div class="share-icon">
+                  <i class="fab fa-stack-overflow"></i>
+                </div>
+                <span>Stack Overflow</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="dev">
+                <div class="share-icon">
+                  <i class="fab fa-dev"></i>
+                </div>
+                <span>DEV</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="medium">
+                <div class="share-icon">
+                  <i class="fab fa-medium-m"></i>
+                </div>
+                <span>Medium</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="hashnode">
+                <div class="share-icon">
+                  <i class="fas fa-hashtag"></i>
+                </div>
+                <span>Hashnode</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="discord">
+                <div class="share-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <span>Discord</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="slack">
+                <div class="share-icon">
+                  <i class="fab fa-slack"></i>
+                </div>
+                <span>Slack</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="hackernews">
+                <div class="share-icon">
+                  <i class="fab fa-hacker-news"></i>
+                </div>
+                <span>Hacker News</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="producthunt">
+                <div class="share-icon">
+                  <i class="fab fa-product-hunt"></i>
+                </div>
+                <span>Product Hunt</span>
+              </a>
+
+              <a href="#" class="share-item" data-platform="copy">
+                <div class="share-icon">
+                  <i class="fas fa-link"></i>
+                </div>
+                <span>Copy Link</span>
+              </a>
+            </div>
+
+            <div class="share-url-container">
+              <input
+                type="text"
+                class="share-url-input"
+                value="https://stacksurge.com"
+                readonly
+              />
+              <button class="share-url-copy">Copy</button>
+            </div>
+
+            <div class="share-qr-container">
+              <div class="share-qr-code" id="qrcode"></div>
+              <div class="share-qr-text">
+                <h3>Scan QR Code</h3>
+                <p>Quickly share with nearby devices</p>
+                <button class="share-qr-download">
+                  <i class="fas fa-download"></i>
+                  <span>Download QR</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-profiles-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>My <span class="gradient-text">Profiles</span></h2>
+            <p>Connect with me across these platforms</p>
+          </div>
+
+          <div class="profiles-grid">
+            <a href="#" class="profile-card" data-platform="github">
+              <div class="profile-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="profile-info">
+                <h3>GitHub</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>Check out my open-source projects and contributions</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="twitter">
+              <div class="profile-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="profile-info">
+                <h3>Twitter</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>Follow for tech insights and community updates</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="linkedin">
+              <div class="profile-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="profile-info">
+                <h3>LinkedIn</h3>
+                <span class="profile-username">Stack Surge</span>
+                <p>Connect professionally and explore career opportunities</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="dev">
+              <div class="profile-icon">
+                <i class="fab fa-dev"></i>
+              </div>
+              <div class="profile-info">
+                <h3>DEV</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>Read my articles and tutorials on web development</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="medium">
+              <div class="profile-icon">
+                <i class="fab fa-medium-m"></i>
+              </div>
+              <div class="profile-info">
+                <h3>Medium</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>In-depth articles on software development and tech trends</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="stackoverflow">
+              <div class="profile-icon">
+                <i class="fab fa-stack-overflow"></i>
+              </div>
+              <div class="profile-info">
+                <h3>Stack Overflow</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>View my contributions and solutions to coding problems</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="discord">
+              <div class="profile-icon">
+                <i class="fab fa-discord"></i>
+              </div>
+              <div class="profile-info">
+                <h3>Discord</h3>
+                <span class="profile-username">Stack Surge Server</span>
+                <p>Join our community chat for real-time discussions</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+
+            <a href="#" class="profile-card" data-platform="hashnode">
+              <div class="profile-icon">
+                <i class="fas fa-hashtag"></i>
+              </div>
+              <div class="profile-info">
+                <h3>Hashnode</h3>
+                <span class="profile-username">@stacksurge</span>
+                <p>Developer-focused content and technical blog posts</p>
+              </div>
+              <div class="profile-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-img small">
+              <img src="images/logo.png" alt="Stack Surge Logo" />
+            </div>
+            <h3>Stack Surge</h3>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Community</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Join Stack Surge</a></li>
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Diversity & Inclusion</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Podcast</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Contact Us</h4>
+              <p>Have questions or feedback?</p>
+              <a href="mailto:sayhi.us@outlook.com" class="footer-email"
+                >sayhi.us@outlook.com</a
+              >
+              <div class="footer-legal">
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Stack Surge. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode.js/qrcode.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/utils/network-bg.js"></script>
+    <script src="../js/utils/share.js"></script>
+  </body>
+</html>

@@ -634,12 +634,15 @@ document.head.appendChild(styleSheet);
 });
  */
 
+// ======================== Logo Based on Theme (Start)========================
+
 // Update logo based on theme
 document.addEventListener("DOMContentLoaded", function () {
   const logo = document.getElementById("themeLogo");
   if (!logo) return;
 
   // Detect if we're on a subpage (about.html, etc.)
+  // Adjust this logic based on your actual folder structure
   const isSubPage = window.location.pathname.includes("/pages/");
 
   function setLogoByTheme() {
@@ -647,7 +650,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const isDark =
       document.body.classList.contains("dark-theme") ||
       document.body.classList.contains("dark-mode");
-    const basePath = isSubPage ? "../public/images/" : "./public/images/";
+    // If on a subpage, use one level up for assets, otherwise use relative path
+    const basePath = isSubPage ? "../assets/images/" : "./assets/images/";
     logo.src = isDark
       ? basePath + "white-logo.svg"
       : basePath + "black-logo.svg";
@@ -678,3 +682,112 @@ document.addEventListener("DOMContentLoaded", function () {
     attributeFilter: ["class"],
   });
 });
+
+// ======================== Logo Based on Theme (End)========================
+
+// ======================== Share Button Functionality (Start)========================
+
+// Share functionality
+const shareBtn = document.querySelector(".share-btn");
+const shareModal = document.querySelector(".share-modal");
+const shareModalClose = document.querySelector(".share-modal-close");
+const shareOptions = document.querySelectorAll(".share-option");
+const shareLinkCopy = document.querySelector(".share-link-copy");
+const shareLinkInput = document.querySelector(".share-link-input");
+
+// Open share modal
+if (shareBtn) {
+  shareBtn.addEventListener("click", () => {
+    shareModal.classList.add("active");
+  });
+}
+
+// Close share modal
+if (shareModalClose) {
+  shareModalClose.addEventListener("click", () => {
+    shareModal.classList.remove("active");
+  });
+}
+
+// Close modal when clicking outside
+if (shareModal) {
+  shareModal.addEventListener("click", (e) => {
+    if (e.target === shareModal) {
+      shareModal.classList.remove("active");
+    }
+  });
+}
+
+// Share options
+if (shareOptions) {
+  shareOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      const platform = option.getAttribute("data-platform");
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(
+        "Check out Stack Surge - A community for developers!"
+      );
+
+      let shareUrl = "";
+
+      switch (platform) {
+        case "twitter":
+          shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+          break;
+        case "facebook":
+          shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+          break;
+        case "linkedin":
+          shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+          break;
+        case "whatsapp":
+          shareUrl = `https://wa.me/?text=${text}%20${url}`;
+          break;
+      }
+
+      if (shareUrl) {
+        window.open(shareUrl, "_blank");
+      }
+    });
+  });
+}
+
+// Copy link
+if (shareLinkCopy && shareLinkInput) {
+  shareLinkCopy.addEventListener("click", () => {
+    shareLinkInput.select();
+    document.execCommand("copy");
+
+    shareLinkCopy.textContent = "Copied!";
+    setTimeout(() => {
+      shareLinkCopy.textContent = "Copy";
+    }, 2000);
+  });
+}
+
+// Active menu item
+const navLinks = document.querySelectorAll(".nav-links a");
+
+// Set active class based on scroll position
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (window.pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+// ======================== Share Button Functionality (End)========================

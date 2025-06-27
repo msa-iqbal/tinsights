@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect | Stack Surge</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- ------------ CSS Link ------------ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/connect-styles.css" />
+  </head>
+  <body class="dark-theme">
+    <canvas id="network-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../assets/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="150"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#newsletter">Updates</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right">
+          <button class="share-btn" aria-label="Share">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button class="theme-toggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="connect-hero">
+        <div class="container">
+          <div class="connect-hero-content">
+            <h1 class="connect-title">
+              Let's <span class="gradient-text">Connect</span>
+            </h1>
+            <p class="connect-subtitle">
+              Join our community and stay in touch through various channels
+            </p>
+          </div>
+        </div>
+        <div class="connect-hero-bg">
+          <div class="connect-particles"></div>
+        </div>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="social-grid-section" id="community">
+        <div class="container">
+          <div class="section-header">
+            <h2>Find Us <span class="gradient-text">Everywhere</span></h2>
+            <p>Connect with Stack Surge across all major platforms</p>
+          </div>
+
+          <div class="social-grid">
+            <!-- GitHub -->
+            <div class="social-card-large" data-platform="github">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>GitHub</h3>
+                  <p>
+                    Explore and contribute to our open-source projects. Join our
+                    developer community and collaborate on exciting initiatives.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">120+</span>
+                      <span class="stat-label">Repositories</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">3.2K</span>
+                      <span class="stat-label">Stars</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">450+</span>
+                      <span class="stat-label">Contributors</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Follow @stacksurge</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Twitter -->
+            <div class="social-card-large" data-platform="twitter">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>Twitter</h3>
+                  <p>
+                    Stay updated with the latest news, events, and tech
+                    discussions. Join the conversation and share your thoughts.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">15K+</span>
+                      <span class="stat-label">Followers</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">2.5K</span>
+                      <span class="stat-label">Tweets</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">Daily</span>
+                      <span class="stat-label">Updates</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Follow @stacksurge</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discord -->
+            <div class="social-card-large" data-platform="discord">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>Discord</h3>
+                  <p>
+                    Join our vibrant community chat where developers connect,
+                    share knowledge, and collaborate in real-time.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">8.5K+</span>
+                      <span class="stat-label">Members</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">20+</span>
+                      <span class="stat-label">Channels</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">24/7</span>
+                      <span class="stat-label">Active</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Join Our Server</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="social-card-large" data-platform="linkedin">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>LinkedIn</h3>
+                  <p>
+                    Connect professionally with our team and community members.
+                    Explore career opportunities and industry insights.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">5K+</span>
+                      <span class="stat-label">Connections</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">Weekly</span>
+                      <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">50+</span>
+                      <span class="stat-label">Job Posts</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Connect with Us</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="social-card-large" data-platform="youtube">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>YouTube</h3>
+                  <p>
+                    Watch our tutorials, tech talks, and event recordings.
+                    Subscribe for regular educational content and community
+                    highlights.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">25K+</span>
+                      <span class="stat-label">Subscribers</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">200+</span>
+                      <span class="stat-label">Videos</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">Weekly</span>
+                      <span class="stat-label">Uploads</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Subscribe to Channel</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="social-card-large" data-platform="facebook">
+              <div class="social-card-inner">
+                <div class="social-icon-large">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-content-large">
+                  <h3>Facebook</h3>
+                  <p>
+                    Join our Facebook community for event updates, tech news,
+                    and casual discussions. Connect with fellow developers.
+                  </p>
+                  <div class="social-stats">
+                    <div class="social-stat">
+                      <span class="stat-number">12K+</span>
+                      <span class="stat-label">Followers</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">Daily</span>
+                      <span class="stat-label">Updates</span>
+                    </div>
+                    <div class="social-stat">
+                      <span class="stat-number">Active</span>
+                      <span class="stat-label">Community</span>
+                    </div>
+                  </div>
+                  <a href="#" class="social-button">
+                    <span>Follow Our Page</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="quick-social-links">
+            <div class="quick-social-title">
+              <span>Quick Connect</span>
+              <div class="quick-social-line"></div>
+            </div>
+            <div class="quick-social-icons">
+              <a href="#" class="quick-social-icon" data-platform="github">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="discord">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="quick-social-icon" data-platform="medium">
+                <i class="fab fa-medium-m"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get in <span class="gradient-text">Touch</span></h2>
+            <p>Reach out to us through email or social media</p>
+          </div>
+
+          <div class="connect-wrapper">
+            <div class="connect-email-card">
+              <div class="email-card-inner">
+                <div class="email-header">
+                  <div class="email-icon-container">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <h3>Email Us</h3>
+                </div>
+                <div class="email-content">
+                  <a href="mailto:sayhi.us@outlook.com" class="email-address">
+                    <span>sayhi.us@outlook.com</span>
+                  </a>
+                  <p>We typically respond within 24 hours</p>
+                  <button class="email-cta">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Send Email</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="connect-social-container">
+              <div class="social-card" data-platform="github">
+                <div class="social-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="social-content">
+                  <h4>GitHub</h4>
+                  <p>Explore our open-source projects</p>
+                  <a
+                    href="https://github.com/thetinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@thetinsights</a
+                  >
+                </div>
+              </div>
+
+              <div class="social-card" data-platform="reddit">
+                <div class="social-icon">
+                  <i class="fab fa-reddit"></i>
+                </div>
+                <div class="social-content">
+                  <h4>Reddit</h4>
+                  <p>Join our private group</p>
+                  <a
+                    href="https://www.reddit.com/r/tinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@tinsights</a
+                  >
+                </div>
+              </div>
+
+              <div class="social-card" data-platform="discord">
+                <div class="social-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="social-content">
+                  <h4>Discord</h4>
+                  <p>Join our community chat</p>
+                  <a
+                    href="https://discord.gg/XtzMwG9rXB"
+                    target="_blank"
+                    class="social-link"
+                    >T-Insights Server</a
+                  >
+                </div>
+              </div>
+
+              <div class="social-card" data-platform="linkedin">
+                <div class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="social-content">
+                  <h4>LinkedIn</h4>
+                  <p>Connect professionally</p>
+                  <a
+                    href="https://www.linkedin.com/groups/14716474"
+                    target="_blank"
+                    class="social-link"
+                    >T-Insights Group</a
+                  >
+                </div>
+              </div>
+
+              <div class="social-card" data-platform="youtube">
+                <div class="social-icon">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-content">
+                  <h4>YouTube</h4>
+                  <p>Watch our tutorials and talks</p>
+                  <a
+                    href="https://www.youtube.com/@TheTinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@TheTinsights</a
+                  >
+                </div>
+              </div>
+
+              <div class="social-card" data-platform="facebook">
+                <div class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-content">
+                  <h4>Facebook</h4>
+                  <p>Join our community group</p>
+                  <a
+                    href="https://www.facebook.com/groups/tinsights"
+                    target="_blank"
+                    class="social-link"
+                    >@tinsights</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <!-- <section class="contact-form-section">
+        <div class="container">
+          <div class="contact-form-container">
+            <div class="contact-form-content">
+              <h2>Send Us a <span class="gradient-text">Message</span></h2>
+              <p>
+                Have a question or want to collaborate? Fill out the form and
+                we'll get back to you soon.
+              </p>
+
+              <form class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What is this regarding?"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group form-checkbox">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <label for="consent"
+                    >I agree to receive responses to my inquiry</label
+                  >
+                </div>
+
+                <button type="submit" class="submit-button">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Share Section -->
+      <section class="share-section" id="share">
+        <div class="container">
+          <div class="share-container">
+            <div class="share-content">
+              <h2>Share <span class="gradient-text">Stack Surge</span></h2>
+              <p>Help us grow by sharing our community with your network</p>
+
+              <div class="share-options-grid">
+                <a href="#" class="share-option-card" data-platform="twitter">
+                  <div class="share-option-icon">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <span>Twitter</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="facebook">
+                  <div class="share-option-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <span>Facebook</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="linkedin">
+                  <div class="share-option-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="whatsapp">
+                  <div class="share-option-icon">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <span>WhatsApp</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="telegram">
+                  <div class="share-option-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                  </div>
+                  <span>Telegram</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="reddit">
+                  <div class="share-option-icon">
+                    <i class="fab fa-reddit-alien"></i>
+                  </div>
+                  <span>Reddit</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="email">
+                  <div class="share-option-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <span>Email</span>
+                </a>
+                <a href="#" class="share-option-card" data-platform="copy">
+                  <div class="share-option-icon">
+                    <i class="fas fa-link"></i>
+                  </div>
+                  <span>Copy Link</span>
+                </a>
+              </div>
+
+              <div class="share-link-container">
+                <input
+                  type="text"
+                  class="share-link-input"
+                  value="https://stacksurge.com"
+                  readonly
+                />
+                <button class="share-link-copy">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section" id="newsletter">
+        <div class="container">
+          <div class="newsletter-container">
+            <div class="newsletter-content">
+              <h2>Stay <span class="gradient-text">Updated</span></h2>
+              <p>
+                Subscribe to our newsletter to receive the latest updates,
+                events, and resources
+              </p>
+
+              <form class="newsletter-form">
+                <div class="newsletter-form-group">
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button type="submit">Subscribe</button>
+                </div>
+                <div class="newsletter-form-privacy">
+                  <label>
+                    <input type="checkbox" required />
+                    <span>I agree to receive emails from Stack Surge</span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-img small">
+              <img src="./assets/images/logo.svg" alt="T-Insights Logo" />
+            </div>
+            <h3>T-Insights</h3>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Community</h4>
+              <ul>
+                <li>
+                  <a href="./pages/terms.html" target="_blank"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@TheTinsights"
+                    target="_blank"
+                    >Tutorials</a
+                  >
+                </li>
+                <li>
+                  <a href="https://dly.to/LVKj9ZA39rw" target="_blank">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a href="https://discord.gg/XtzMwG9rXB" target="_blank"
+                    >Discord</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/thetinsights" target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Contact Us</h4>
+              <p>Have questions or feedback?</p>
+              <a href="mailto:sayhi.us@outlook.com" class="footer-email"
+                >sayhi.us@outlook.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 T-Insights | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Share Modal -->
+    <div class="share-modal">
+      <div class="share-modal-content">
+        <button class="share-modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="share-modal-title">Share Stack Surge</h3>
+        <div class="share-options">
+          <div class="share-option" data-platform="twitter">
+            <i class="fab fa-twitter" style="color: #1da1f2"></i>
+            <span>Twitter</span>
+          </div>
+          <div class="share-option" data-platform="facebook">
+            <i class="fab fa-facebook-f" style="color: #1877f2"></i>
+            <span>Facebook</span>
+          </div>
+          <div class="share-option" data-platform="linkedin">
+            <i class="fab fa-linkedin-in" style="color: #0a66c2"></i>
+            <span>LinkedIn</span>
+          </div>
+          <div class="share-option" data-platform="whatsapp">
+            <i class="fab fa-whatsapp" style="color: #25d366"></i>
+            <span>WhatsApp</span>
+          </div>
+        </div>
+        <div class="share-link-container">
+          <input
+            type="text"
+            class="share-link-input"
+            value="https://stacksurge.com/connect.html"
+            readonly
+          />
+          <button class="share-link-copy">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/utils/network-bg.js"></script>
+    <script src="../js/utils/connect.js"></script>
+  </body>
+</html>
