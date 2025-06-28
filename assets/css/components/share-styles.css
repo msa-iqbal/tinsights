@@ -18,6 +18,7 @@
   --slack-color: #4a154b;
   --hackernews-color: #ff6600;
   --producthunt-color: #da552f;
+  --dailydev-color: #6A0DAD;
 }
 
 /* Share Page Section */
@@ -77,7 +78,7 @@
   gap: 0.75rem;
   padding: 1.5rem 1rem;
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, 0.05);
+  /* background-color: rgba(255, 255, 255, 0.05); */
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
@@ -86,7 +87,7 @@
 
 .share-item:hover {
   transform: translateY(-5px);
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .share-icon {
@@ -398,6 +399,22 @@
   background-color: var(--twitter-color);
 }
 
+.profile-card[data-platform="dailydev"]::before {
+  background-color: var(--dailydev-color);
+}
+
+.profile-card[data-platform="whatsapp"]::before {
+  background-color: var(--whatsapp-color);
+}
+
+.profile-card[data-platform="telegram"]::before {
+  background-color: var(--telegram-color);
+}
+
+.profile-card[data-platform="slack"]::before {
+  background-color: var(--slack-color);
+}
+
 .profile-card[data-platform="linkedin"]::before {
   background-color: var(--linkedin-color);
 }
@@ -430,8 +447,24 @@
   background-color: var(--twitter-color);
 }
 
+.profile-card[data-platform="dailydev"] .profile-icon {
+  background-color: var(--dailydev-color);
+}
+
+.profile-card[data-platform="telegram"] .profile-icon {
+  background-color: var(--telegram-color);
+}
+
+.profile-card[data-platform="slack"] .profile-icon {
+  background-color: var(--slack-color);
+}
+
 .profile-card[data-platform="linkedin"] .profile-icon {
   background-color: var(--linkedin-color);
+}
+
+.profile-card[data-platform="whatsapp"] .profile-icon {
+  background-color: var(--whatsapp-color);
 }
 
 .profile-card[data-platform="dev"] .profile-icon {
@@ -454,7 +487,7 @@
   background-color: var(--hashnode-color);
 }
 
-.profile-card[data-platform="github"] h3 {
+/* .profile-card[data-platform="github"] h3 {
   color: var(--github-color);
 }
 
@@ -484,7 +517,7 @@
 
 .profile-card[data-platform="hashnode"] h3 {
   color: var(--hashnode-color);
-}
+} */
 
 /* Footer Email */
 .footer-email {

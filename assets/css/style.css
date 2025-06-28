@@ -17,12 +17,19 @@
   --ring: #8a5cf6;
   --radius: 0.5rem;
   --header-height: 70px;
-  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   /* Social Media Colors */
   --github-color: #333333;
   --twitter-color: #1da1f2;
+  --telegram-color: #0088cc;
+  --whatsapp-color: #25d366;
+  --slack-color: #4a154b;
+  --dailydev-color: #6A0DAD;
+  --devto-color: #0a0a0a;
+  --hashnode-color: #2962ff;
   --discord-color: #7289da;
   --linkedin-color: #0a66c2;
   --youtube-color: #ff0000;
@@ -93,7 +100,7 @@ body {
   opacity: 0.03;
   pointer-events: none;
   z-index: -1;
-} 
+}
 
 /* Container */
 .container {
@@ -142,7 +149,12 @@ a:hover {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -178,7 +190,12 @@ button {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.7s ease;
   z-index: -1;
 }
@@ -244,9 +261,8 @@ header .container {
   align-items: center;
   gap: 0.75rem;
   margin-top: 18px;
-}W
-
-.logo h1 {
+}
+W .logo h1 {
   font-size: 1.5rem;
   margin-bottom: 0;
   background: linear-gradient(90deg, var(--primary), var(--secondary));
@@ -487,19 +503,24 @@ header .container {
   animation: bounce 2s infinite;
 }
 
-.hero-description{
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-    font-weight: 400;
-    transition: color 0.3s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-decoration-thickness: 6px;
+.hero-description {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration-thickness: 6px;
 }
 
 @keyframes bounce {
@@ -962,8 +983,16 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(138, 92, 246, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(92, 225, 230, 0.15) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(138, 92, 246, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(92, 225, 230, 0.15) 0%,
+      transparent 50%
+    );
 }
 
 .connect-wrapper {
@@ -1156,7 +1185,11 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.03) 100%);
+  background: linear-gradient(
+    45deg,
+    transparent 50%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
   z-index: 0;
 }
 
@@ -1171,6 +1204,30 @@ section {
 
 .social-card[data-platform="twitter"] {
   border-left: 3px solid var(--twitter-color);
+}
+
+.social-card[data-platform="dailydev"] {
+  border-left: 3px solid var(--dailydev-color);
+}
+
+.social-card[data-platform="devto"] {
+  border-left: 3px solid var(--devto-color);
+}
+
+.social-card[data-platform="whatsapp"] {
+  border-left: 3px solid var(--whatsapp-color);
+}
+
+.social-card[data-platform="telegram"] {
+  border-left: 3px solid var(--telegram-color);
+}
+
+.social-card[data-platform="slack"] {
+  border-left: 3px solid var(--slack-color);
+}
+
+.social-card[data-platform="hashnode"] {
+  border-left: 3px solid var(--hashnode-color);
 }
 
 .social-card[data-platform="reddit"] {
@@ -1217,6 +1274,36 @@ section {
   box-shadow: 0 5px 15px rgba(29, 161, 242, 0.3);
 }
 
+.social-card[data-platform="dailydev"] .social-icon {
+  background: var(--dailydev-color);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.social-card[data-platform="devto"] .social-icon {
+  background: var(--devto-color);
+  box-shadow: 0 5px 15px rgba(34, 34, 34, 0.3);
+}
+
+.social-card[data-platform="hashnode"] .social-icon {
+  background: var(--hashnode-color);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.social-card[data-platform="whatsapp"] .social-icon {
+  background: var(--whatsapp-color);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.social-card[data-platform="telegram"] .social-icon {
+  background: var(--telegram-color);
+  box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+}
+
+.social-card[data-platform="slack"] .social-icon {
+  background: var(--slack-color);
+  box-shadow: 0 5px 15px rgba(74, 74, 74, 0.3);
+}
+
 .social-card[data-platform="reddit"] .social-icon {
   background: var(--reddit-color);
   box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
@@ -1258,6 +1345,30 @@ section {
 
 .social-card[data-platform="twitter"] h4 {
   color: var(--twitter-color);
+}
+
+.social-card[data-platform="dailydev"] h4 {
+  color: var(--dailydev-color);
+}
+
+.social-card[data-platform="devto"] h4 {
+  color: var(--devto-color);
+}
+
+.social-card[data-platform="hashnode"] h4 {
+  color: var(--hashnode-color);
+}
+
+.social-card[data-platform="whatsapp"] h4 {
+  color: var(--whatsapp-color);
+}
+
+.social-card[data-platform="telegram"] h4 {
+  color: var(--telegram-color);
+}
+
+.social-card[data-platform="slack"] h4 {
+  color: var(--slack-color);
 }
 
 .social-card[data-platform="reddit"] h4 {
@@ -1313,6 +1424,30 @@ section {
   background: var(--twitter-color);
 }
 
+.social-card[data-platform="dailydev"] .social-link::after {
+  background: var(--dailydev-color);
+}
+
+.social-card[data-platform="devto"] .social-link::after {
+  background: var(--devto-color);
+}
+
+.social-card[data-platform="hashnode"] .social-link::after {
+  background: var(--hashnode-color);
+}
+
+.social-card[data-platform="whatsapp"] .social-link::after {
+  background: var(--whatsapp-color);
+}
+
+.social-card[data-platform="telegram"] .social-link::after {
+  background: var(--telegram-color);
+}
+
+.social-card[data-platform="slack"] .social-link::after {
+  background: var(--slack-color);
+}
+
 .social-card[data-platform="reddit"] .social-link::after {
   background: var(--reddit-color);
 }
@@ -1343,6 +1478,30 @@ section {
 
 .social-card[data-platform="twitter"] .social-link:hover {
   color: var(--twitter-color);
+}
+
+.social-card[data-platform="dailydev"] .social-link:hover {
+  color: var(--dailydev-color);
+}
+
+.social-card[data-platform="devto"] .social-link:hover {
+  color: var(--devto-color);
+}
+
+.social-card[data-platform="hashnode"] .social-link:hover {
+  color: var(--hashnode-color);
+}
+
+.social-card[data-platform="whatsapp"] .social-link:hover {
+  color: var(--whatsapp-color);
+}
+
+.social-card[data-platform="telegram"] .social-link:hover {
+  color: var(--telegram-color);
+}
+
+.social-card[data-platform="slack"] .social-link:hover {
+  color: var(--slack-color);
 }
 
 .social-card[data-platform="reddit"] .social-link:hover {
@@ -1607,7 +1766,12 @@ footer {
 .footer-logo h3 {
   font-size: 1.25rem;
   margin-bottom: 0;
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1626,6 +1790,8 @@ footer {
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
+  color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .footer-column h4::after {
@@ -1651,6 +1817,7 @@ footer {
   opacity: 0.7;
   transition: opacity 0.2s ease, transform 0.2s ease;
   display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .footer-column ul li a:hover {
@@ -1691,6 +1858,93 @@ footer {
 .footer-social a:hover {
   opacity: 1;
   transform: translateY(-3px);
+}
+
+.footer-email {
+  font-size: 1.115rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.footer-email:hover {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-email2 {
+  font-size: 1.115rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.footer-email2:hover {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.footer-legal a {
+  color: var(--foreground);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-about p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.footer-about {
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+
+.footer-about p {
+  margin-bottom: 0.1rem;
+}
+
+.footer-about strong {
+  font-weight: 600;
+  color: var(--foreground);
 }
 
 /* Back to Top Button */
@@ -1759,8 +2013,16 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at top right, rgba(138, 92, 246, 0.05), transparent 70%),
-    radial-gradient(circle at bottom left, rgba(92, 225, 230, 0.05), transparent 70%);
+  background: radial-gradient(
+      circle at top right,
+      rgba(138, 92, 246, 0.05),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(92, 225, 230, 0.05),
+      transparent 70%
+    );
   z-index: 0;
 }
 
@@ -2082,65 +2344,3 @@ footer {
     flex-direction: column;
   }
 }
-
-.footer-email {
-
-    font-size: 1.125rem;
-    margin-bottom: 0;
-    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: all 0.3s ease;
-  }
-
-  .footer-email:hover {
-    color: var(--secondary);
-    text-decoration: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-
-  .footer-legal {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.875rem;
-  }
-
-  .footer-legal a {
-    color: var(--foreground);
-    opacity: 0.7;
-    transition: all 0.2s ease;
-  }
-
-  .footer-legal a:hover {
-    opacity: 1;
-    color: var(--primary);
-  }
-
-
-.footer-about {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  
-}
-
-.footer-about p {
-  font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 0;
-
-}
-
-.footer-values{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    list-style: square;
-    padding-left: 2rem;
-    font-size: 14px;
-    color: #6C6B73;
-    
-}
-
-    

@@ -3,18 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Updates | Stack Surge</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Work in Progress | T-Insights</title>
+
+    <!-- ===== META TAG <START> ====== -->
+    <meta
+      name="description"
+      content="Join T-Insights, a vibrant community for developers and tech enthusiasts to connect, share insights, and grow together. Explore events, projects, and resources."
+    />
+    <meta name="author" content="Muhammad S.A. Iqbal" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="T-Insights | Where Developers Connect" />
+    <meta
+      property="og:description"
+      content="Join T-Insights, a vibrant community for developers and tech enthusiasts to connect, share insights, and grow together. Explore events, projects, and resources."
+    />
+    <meta property="og:image" content="../assets/images/tinsights-share.png" />
+    <meta property="og:url" content="https://tinsights.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="T-Insights" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="T-Insights | Where Developers Connect"
+    />
+    <meta
+      name="twitter:description"
+      content="Join T-Insights, a vibrant community for developers and tech enthusiasts to connect, share insights, and grow together. Explore events, projects, and resources."
+    />
+    <meta name="twitter:image" content="../assets/images/tinsights-share.png" />
+    <meta name="twitter:site" content="T-Insights" />
+    <meta name="twitter:creator" content="@msaiqs" />
+    <!-- Remove this line if not using Google Search Console verification, or replace with your actual code, e.g.:
+          <meta name="google-site-verification" content="ACTUAL_VERIFICATION_CODE" />
+          -->
+    <!-- ===== META TAG <END> ====== -->
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body class="dark-theme">
     <canvas id="network-canvas"></canvas>
@@ -23,29 +66,28 @@
     <header>
       <div class="container">
         <div class="logo">
-          <div class="logo-img">
-            <img src="images/logo.png" alt="Stack Surge Logo" />
-          </div>
-          <h1>Stack Surge</h1>
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../assets/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="150"
+              height="auto"
+              id="themeLogo"
+          /></a>
         </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#events">Events</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#connect">Connect</a></li>
-            <li><a href="update.html" class="active">Updates</a></li>
+            <li><a href="../index.html">↩ Home</a></li>
           </ul>
         </nav>
         <div class="nav-right">
-          <button class="share-btn" aria-label="Share">
-            <i class="fas fa-share-alt"></i>
-          </button>
           <button class="theme-toggle" aria-label="Toggle dark/light mode">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
           </button>
-          <button class="primary-btn join-btn">Join Community</button>
+          <a href="./connect.html" target="_self"
+            ><button class="primary-btn join-btn">Join Community</button></a
+          >
           <button class="menu-toggle" aria-label="Toggle menu">
             <span></span>
             <span></span>
@@ -94,196 +136,13 @@
                 <span>Mentorship Program</span>
               </div>
             </div>
-            <a href="index.html" class="primary-btn">Back to Home</a>
+            <a href="../index.html" class="primary-btn">Back to Home</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <div class="logo-img small">
-              <img src="images/logo.png" alt="Stack Surge Logo" />
-            </div>
-            <h3>Stack Surge</h3>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>Community</h4>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Join Stack Surge</a></li>
-                <li><a href="#">Code of Conduct</a></li>
-                <li><a href="#">Diversity & Inclusion</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Resources</h4>
-              <ul>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Tutorials</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Podcast</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Connect</h4>
-              <ul>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Contact Us</h4>
-              <p>Have questions or feedback?</p>
-              <a href="mailto:sayhi.us@outlook.com" class="footer-email"
-                >sayhi.us@outlook.com</a
-              >
-              <div class="footer-legal">
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2023 Stack Surge. All rights reserved.</p>
-          <div class="footer-social">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-discord"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <button id="back-to-top" aria-label="Back to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Share Modal -->
-    <div class="share-modal">
-      <div class="share-modal-content">
-        <button class="share-modal-close">
-          <i class="fas fa-times"></i>
-        </button>
-        <h3 class="share-modal-title">Share Stack Surge</h3>
-        <div class="share-options">
-          <div class="share-option" data-platform="twitter">
-            <i class="fab fa-twitter" style="color: #1da1f2"></i>
-            <span>Twitter</span>
-          </div>
-          <div class="share-option" data-platform="facebook">
-            <i class="fab fa-facebook-f" style="color: #1877f2"></i>
-            <span>Facebook</span>
-          </div>
-          <div class="share-option" data-platform="linkedin">
-            <i class="fab fa-linkedin-in" style="color: #0a66c2"></i>
-            <span>LinkedIn</span>
-          </div>
-          <div class="share-option" data-platform="whatsapp">
-            <i class="fab fa-whatsapp" style="color: #25d366"></i>
-            <span>WhatsApp</span>
-          </div>
-        </div>
-        <div class="share-link-container">
-          <input
-            type="text"
-            class="share-link-input"
-            value="https://stacksurge.com/update.html"
-            readonly
-          />
-          <button class="share-link-copy">Copy</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="../js/main.js"></script>
-    <script src="../js/utils/network-bg.js"></script>
-    <script>
-      // Share functionality
-      const shareBtn = document.querySelector(".share-btn");
-      const shareModal = document.querySelector(".share-modal");
-      const shareModalClose = document.querySelector(".share-modal-close");
-      const shareOptions = document.querySelectorAll(".share-option");
-      const shareLinkCopy = document.querySelector(".share-link-copy");
-      const shareLinkInput = document.querySelector(".share-link-input");
-
-      // Open share modal
-      if (shareBtn) {
-        shareBtn.addEventListener("click", () => {
-          shareModal.classList.add("active");
-        });
-      }
-
-      // Close share modal
-      if (shareModalClose) {
-        shareModalClose.addEventListener("click", () => {
-          shareModal.classList.remove("active");
-        });
-      }
-
-      // Close modal when clicking outside
-      if (shareModal) {
-        shareModal.addEventListener("click", (e) => {
-          if (e.target === shareModal) {
-            shareModal.classList.remove("active");
-          }
-        });
-      }
-
-      // Share options
-      if (shareOptions) {
-        shareOptions.forEach((option) => {
-          option.addEventListener("click", () => {
-            const platform = option.getAttribute("data-platform");
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent(
-              "Check out Stack Surge - A community for developers!"
-            );
-
-            let shareUrl = "";
-
-            switch (platform) {
-              case "twitter":
-                shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-                break;
-              case "facebook":
-                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-                break;
-              case "linkedin":
-                shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-                break;
-              case "whatsapp":
-                shareUrl = `https://wa.me/?text=${text}%20${url}`;
-                break;
-            }
-
-            if (shareUrl) {
-              window.open(shareUrl, "_blank");
-            }
-          });
-        });
-      }
-
-      // Copy link
-      if (shareLinkCopy && shareLinkInput) {
-        shareLinkCopy.addEventListener("click", () => {
-          shareLinkInput.select();
-          shareLinkInput.setSelectionRange(0, 99999); // For mobile devices
-          document.execCommand("copy");
-          shareLinkCopy.textContent = "Copied!";
-          setTimeout(() => {
-            shareLinkCopy.textContent = "Copy";
-          }, 1500);
-        });
-      }
-    </script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/utils/network-bg.js"></script>
   </body>
 </html>
