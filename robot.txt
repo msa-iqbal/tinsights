@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tinsights.vercel.app/sitemap.xml
